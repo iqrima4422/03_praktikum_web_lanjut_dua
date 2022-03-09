@@ -12,10 +12,10 @@
         http://www.templatemo.com/preview/templatemo_457_multi_profile
         -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
-        <link href="asset/css/bootstrap.min.css" rel="stylesheet">
-        <link href="asset/css/font-awesome.min.css" rel="stylesheet">
-        <link href="asset/css/templatemo-style.css" rel="stylesheet">
-
+        <link href="{{asset('asset/css/bootstrap.min.css')}}" rel="stylesheet">
+        <link href="{{asset('asset/css/font-awesome.min.css')}}" rel="stylesheet">
+        <link href="{{asset('asset/css/templatemo-style.css')}}" rel="stylesheet">
+        
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -30,7 +30,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-sm-4 site-name-container">
-                        <img src="asset/img/logo.png" alt="Site logo" class="site-logo">
+                        <img src="{{asset('asset/img/logo.png')}}" alt="Site logo" class="site-logo">
                         <h1 class="site-name">Healthy</h1>
                     </div>
                     <div class="mobile-menu-icon">
@@ -53,5 +53,4 @@
         <!-- header image -->
         <!-- <div class="header-img"></div> -->
         <!-- end header image -->
-    </body>
-</html>
+ 

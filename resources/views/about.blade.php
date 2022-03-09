@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('main')
-<body>
+
      <!-- header image -->
      <div class="header-img-2"></div>
         <!-- end header image -->
@@ -11,7 +11,7 @@
                     <div class="col-lg-12">
                         <div class="welcome-wrapper">
                             <h2 class="welcome-title text-uppercase">About Us</h2>
-                            <img src="asset/img/welcome-divider-lines.png" alt="Welcome divider" class="welcome-divider-lines-img">
+                            <img src="{{asset('asset/img/welcome-divider-lines.png')}}" alt="Welcome divider" class="welcome-divider-lines-img">
                             <p class="welcome-description"> Berikan asupan nutrisi lengkap untuk anak-anak agar tumbuh kembangnya optimal</p>
                         </div>
                     </div>
@@ -48,8 +48,8 @@
                     <div class="col-lg-5 col-md-5 col-sm-5 tm-about-right">
                         <div class="tm-img-container margin-bottom-30">
                             <div class="tm-img-overlay">
-                                <p class="asset/img-description">Influencer</p>
-                                <p class="asset/img-title">Shopia Latjuba</p>
+                                <p class="{{asset('asset/img-description')}}">Influencer</p>
+                                <p class="{{asset('asset/img-title')}}">Shopia Latjuba</p>
                             </div>
                             <img src="https://img.inews.co.id/media/620/files/inews_new/2021/12/08/sophia_latjuba_ig_mya.jpg" alt="Image" class="img-responsive">
                         </div>
@@ -181,6 +181,5 @@
             </div>
         </section>
         <!-- end main content -->
-</body>
-       
+
 @endsection

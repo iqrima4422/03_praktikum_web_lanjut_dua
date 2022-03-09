@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('main')
-<body>
+
     <!-- header image -->
     <div class="header-img-4">
     </div>
@@ -12,7 +12,7 @@
                 <div class="col-lg-12">
                     <div class="welcome-wrapper">
                         <h2 class="welcome-title text-uppercase">Contact</h2>
-                        <img src="asset/img/welcome-divider-lines.png" alt="Welcome divider" class="welcome-divider-lines-img">
+                        <img src="{{asset('asset/img/welcome-divider-lines.png')}}" alt="Welcome divider" class="welcome-divider-lines-img">
                         <p class="welcome-description">Anda dapat menghubungi kami jika anda membutuhkan informasi mengenai kesehatan</p>
                     </div>
                 </div>
@@ -137,8 +137,8 @@
     </section>
     <!-- end main content -->
     <!-- JS -->
-    <script type="text/javascript" src="asset/js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
-    <script type="text/javascript" src="asset/js/templatemo-script.js"></script>      <!-- Templatemo Script -->
+    <script type="text/javascript" src="{{asset('asset/js/jquery-1.11.2.min.js')}}"></script>      <!-- jQuery -->
+    <script type="text/javascript" src="{{asset('asset/js/templatemo-script.js')}}"></script>      <!-- Templatemo Script -->
     <script>
         /* Google map
         ------------------------------------------------*/
@@ -177,5 +177,5 @@
             loadGoogleMap();
         });
     </script>
-</body>
+
 @endsection

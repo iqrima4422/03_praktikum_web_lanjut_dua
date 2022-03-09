@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('main')
-<body>
+
     <!-- header image -->
     <div class="header-img"></div>
     <!-- end header image -->
@@ -11,7 +11,7 @@
                 <div class="col-lg-12">
                     <div class="welcome-wrapper">
                         <h2 class="welcome-title text-uppercase">Welcome</h2>
-                        <img src="asset/img/welcome-divider-lines.png" alt="Welcome divider" class="welcome-divider-lines-img">
+                        <img src="{{asset('asset/img/welcome-divider-lines.png')}}" alt="Welcome divider" class="welcome-divider-lines-img">
                         <p class="welcome-description">Healthy LifeStyle adalah suatu gaya hidup yang memperhatikan segala aspek kesehatan. 
                             Aspek tersebut antara lain makanan dan minuman yang dikonsumsi, berolahraga secara teratur dan memiliki tidur atau istirahat yang cukup.</p>
                     </div>
@@ -62,10 +62,10 @@
                     </div>   <!-- carousel-container -->
                     <div id="navbtns" class="crsl-nav">
                         <a href="#" class="previous">
-                            <img src="asset/img/carousel-arrow-previous.png" alt="previous">
+                            <img src="{{asset('asset/img/carousel-arrow-previous.png')}}" alt="previous">
                         </a>
                         <a href="#" class="next">
-                            <img src="asset/img/carousel-arrow-next.png" alt="next">
+                            <img src="{{asset('asset/img/carousel-arrow-next.png')}}" alt="next">
                         </a>
                     </div>
                 </div>
@@ -153,12 +153,12 @@
                         <div class="post-date">01</div>
                     </div>
                     <div class="post-arrow-container rotate-arrow">
-                        <img src="asset/img/blog-arrow.png" alt="arrow">
+                        <img src="{{asset('asset/img/blog-arrow.png')}}" alt="arrow">
                     </div>
                 </div>
                 <div class="post-excerpt post-excerpt-right">
                     <div class="post-arrow-container">
-                        <img src="asset/img/blog-arrow.png" alt="arrow">
+                        <img src="{{asset('asset/img/blog-arrow.png')}}" alt="arrow">
                     </div>
                     <div class="post-date-container">
                         <div class="post-month">Feb</div>
@@ -180,12 +180,12 @@
                         <div class="post-date">03</div>
                     </div>
                     <div class="post-arrow-container rotate-arrow">
-                        <img src="asset/img/blog-arrow.png" alt="arrow">
+                        <img src="{{asset('asset/img/blog-arrow.png')}}" alt="arrow">
                     </div>
                 </div>
                 <div class="post-excerpt post-excerpt-right">
                     <div class="post-arrow-container">
-                        <img src="asset/img/blog-arrow.png" alt="arrow">
+                        <img src="{{asset('asset/img/blog-arrow.png')}}" alt="arrow">
                     </div>
                     <div class="post-date-container">
                         <div class="post-month">Feb</div>
@@ -207,7 +207,7 @@
                         <div class="post-date">05</div>
                     </div>
                     <div class="post-arrow-container rotate-arrow">
-                        <img src="asset/img/blog-arrow.png" alt="arrow">
+                        <img src="{{asset('asset/img/blog-arrow.png')}}" alt="arrow">
                     </div>
                 </div>
             </div>
@@ -326,9 +326,9 @@
     <!-- end main content -->
 
     <!-- JS -->
-    <script type="text/javascript" src="asset/js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
-    <script type="text/javascript" src="asset/js/responsiveCarousel.min.js"></script>      <!-- Carousel -->
-    <script type="text/javascript" src="asset/js/templatemo-script.js"></script>      <!-- Templatemo Script -->
+    <script type="text/javascript" src="{{asset('asset/js/jquery-1.11.2.min.js')}}"></script>      <!-- jQuery -->
+    <script type="text/javascript" src="{{asset('asset/js/responsiveCarousel.min.js')}}"></script>      <!-- Carousel -->
+    <script type="text/javascript" src="{{asset('asset/js/templatemo-script.js')}}"></script>      <!-- Templatemo Script -->
     <script>
 
         $(function() {
@@ -344,5 +344,5 @@
         });
 
     </script>
-</body>
+
 @endsection

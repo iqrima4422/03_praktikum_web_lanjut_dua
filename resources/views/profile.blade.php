@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('main')
-<body>
+
     <!-- header image -->
     <div class="header-img-3"></div>
         <!-- end header image -->
@@ -11,7 +11,7 @@
                     <div class="col-lg-12">
                         <div class="welcome-wrapper">
                             <h2 class="welcome-title text-uppercase">Profile</h2>
-                            <img src="asset/img/welcome-divider-lines.png" alt="Welcome divider" class="welcome-divider-lines-img">
+                            <img src="{{asset('asset/img/welcome-divider-lines.png')}}" alt="Welcome divider" class="welcome-divider-lines-img">
                             <p class="welcome-description">Berbagai macam cara untuk tetap hidup sehat. Dimulai dari menjaga pola makan serta olahraga yang teratur.</p>
                         </div>
                     </div>
@@ -129,9 +129,9 @@
     </section>
     <!-- end main content -->
     <!-- JS -->
-    <script type="text/javascript" src="asset/js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
-    <script type="text/javascript" src="asset/js/isotope.pkgd.min.js"></script>      <!-- Isotope, http://isotope.metafizzy.co -->
-    <script type="text/javascript" src="asset/js/templatemo-script.js"></script>      <!-- Templatemo Script -->
+    <script type="text/javascript" src="{{asset('asset/js/jquery-1.11.2.min.js')}}"></script>      <!-- jQuery -->
+    <script type="text/javascript" src="{{asset('asset/js/isotope.pkgd.min.js')}}"></script>      <!-- Isotope, http://isotope.metafizzy.co -->
+    <script type="text/javascript" src="{{asset('asset/js/templatemo-script.js')}}"></script>      <!-- Templatemo Script -->
     <script>
         // All images are loaded. Call isotope
         $(window).load(function() {
@@ -161,5 +161,5 @@
             });
         });
     </script>
-</body>
+
 @endsection
