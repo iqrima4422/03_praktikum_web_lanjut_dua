@@ -147,7 +147,7 @@
                         <ul>
                             <li><a href="/home">home</a></li>
                             <li><a href="/about">About</a></li>
-                            <li><a href="/profile">Profile</a></li>
+                            <li><a href="/profile">Product</a></li>
                             <li><a href="/contact">Contact</a></li>
                         </ul>
                     </nav>
