@@ -113,6 +113,9 @@
                             @endforeach
                     </tbody>
                 </table>
+                <div class="tm-pagging-links">
+                    {{ $daftar->onEachSide(1)->links() }}
+                </div>
             </div>
         </div>
     </section>
